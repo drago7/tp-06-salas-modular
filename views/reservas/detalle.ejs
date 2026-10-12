@@ -1,0 +1,8 @@
+<article class="detalle">
+  <p class="etiqueta"><%= reserva.sala %></p>
+  <h1><%= reserva.estudiante %></h1>
+  <p><%= reserva.email %></p>
+  <p><%= reserva.fecha %> · <%= reserva.turno %></p>
+  <p><%= reserva.personas %> <%= reserva.personas === 1 ? "persona" : "personas" %></p>
+  <a class="boton" href="/reservas">Volver a reservas</a>
+</article>

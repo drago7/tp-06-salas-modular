@@ -1,0 +1,30 @@
+{
+  "name": "tp-06-salas-modular",
+  "version": "1.0.0",
+  "description": "Refactorización modular en capas - reservas de salas de estudio (TP06)",
+  "main": "src/index.js",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node --check src/index.js && node --check src/app.js && node --check src/configuracion.js && node --check src/servicios/reservas.js && node --check src/controladores/reservas.js && node --check src/rutas/reservas.js && node --check src/middleware/solicitudes.js && node --check src/middleware/reservas.js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "verificar": "npm run format:check && npm run lint"
+  },
+  "keywords": [],
+  "author": "Gabriel Rehue Maldonado",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "express-ejs-layouts": "^2.5.1",
+    "morgan": "^1.12.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.12.0",
+    "prettier": "^3.9.10"
+  }
+}

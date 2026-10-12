@@ -1,0 +1,166 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #1f2430;
+  background: #f2f5f7;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #2a5d8f;
+  font-weight: 700;
+}
+a:hover {
+  color: #1c4066;
+}
+
+.encabezado,
+.pie,
+.contenedor {
+  width: min(60rem, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1rem;
+  border-bottom: 2px solid #2a5d8f;
+}
+.encabezado nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.marca {
+  color: #1f2430;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.contenedor {
+  flex: 1;
+  padding-block: 2.5rem;
+}
+
+.hero,
+.estado,
+.detalle,
+.panel-formulario {
+  max-width: 34rem;
+  padding: 2rem;
+  background: #ffffff;
+  border: 1px solid #d7dee3;
+  border-radius: 1rem;
+}
+
+.etiqueta {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  color: #b45309;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.boton,
+button {
+  display: inline-block;
+  padding: 0.65rem 1.1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: #2a5d8f;
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+.boton:hover,
+button:hover {
+  background: #1c4066;
+  color: #fff;
+}
+
+.cabecera-pagina {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+}
+.tarjeta {
+  padding: 1.1rem;
+  background: #fff;
+  border: 1px solid #d7dee3;
+  border-radius: 0.8rem;
+}
+
+.formulario {
+  display: grid;
+  gap: 0.6rem;
+  max-width: 30rem;
+}
+.formulario label {
+  font-weight: 700;
+}
+.formulario input,
+.formulario select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #a9b4bd;
+  border-radius: 0.4rem;
+  font: inherit;
+}
+.formulario button {
+  justify-self: start;
+  margin-top: 0.4rem;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+a:focus-visible,
+.boton:focus-visible {
+  outline: 3px solid #f4ca76;
+  outline-offset: 2px;
+}
+
+.error {
+  padding: 0.6rem 0.9rem;
+  border-left: 4px solid #b42318;
+  background: #fdecea;
+  color: #7a271a;
+  font-weight: 700;
+}
+
+.pie {
+  padding-block: 1.1rem;
+  border-top: 1px solid #d7dee3;
+  color: #6b6558;
+  font-size: 0.9rem;
+}
+.pie p {
+  margin: 0.2rem 0;
+}
+.solicitud-id {
+  font-size: 0.75rem;
+  color: #9a958a;
+}
